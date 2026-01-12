@@ -77,7 +77,7 @@ Your application is now fully configured with the correct Gemini models:
 
 Your `.env.local` should contain:
 ```env
-API_KEY=AIzaSyBZmYF1qLtcFMmiG5v_L67L1glAHSJcxFA
+API_KEY=your_google_gemini_api_key_here
 ELEVEN_LABS_API_KEY=your_elevenlabs_api_key_here
 ```
 

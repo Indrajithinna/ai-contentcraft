@@ -20,7 +20,7 @@ Open: http://localhost:3000
 
 Your `.env.local` file:
 ```env
-API_KEY=AIzaSyBZmYF1qLtcFMmiG5v_L67L1glAHSJcxFA  ✅
+API_KEY=your_google_gemini_api_key_here  ⏳ (optional)
 ELEVEN_LABS_API_KEY=your_key_here  ⏳ (optional)
 ```
 
