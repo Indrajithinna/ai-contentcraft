@@ -1,7 +1,9 @@
 {
   "name": "ai-contentcraft",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A powerful multi-modal AI content generation platform using Google Gemini 2.5 Flash",
+  "keywords": ["ai", "content-generation", "gemini", "react", "typescript"],
   "type": "module",
   "scripts": {
     "dev": "vite",
