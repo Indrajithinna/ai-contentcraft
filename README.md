@@ -1,5 +1,11 @@
 # AI ContentCraft
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?logo=typescript)
+![Gemini](https://img.shields.io/badge/Gemini-2.5%20Flash-orange)
+
 A powerful multi-modal AI content generation platform using **Google Gemini 2.5 Flash** models.
 
 ## ✨ Features
