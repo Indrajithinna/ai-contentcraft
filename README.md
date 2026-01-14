@@ -174,7 +174,32 @@ Edit `constants.ts` to add or modify content templates:
 
 ## 📚 Documentation
 
-- [Gemini Image Setup Guide](./GEMINI_IMAGE_SETUP.md) - Detailed image generation documentation
+### Getting Started
+- [README](./README.md) - This file
+- [Quick Reference](./QUICK_REFERENCE.md) - Quick start guide
+- [FAQ](./FAQ.md) - Frequently asked questions
+
+### Setup & Configuration
+- [Gemini Image Setup](./GEMINI_IMAGE_SETUP.md) - Detailed image generation setup
+- [API Documentation](./API_DOCUMENTATION.md) - API integration guide
+- [Environment Variables](./.env.template) - Configuration template
+
+### Development
+- [Contributing Guide](./CONTRIBUTING.md) - How to contribute
+- [Testing Guide](./TESTING.md) - Testing strategies and tools
+- [Performance Guide](./PERFORMANCE.md) - Optimization tips
+- [Example Prompts](./examples/PROMPTS.md) - Sample prompts to get started
+
+### Deployment & Production
+- [Deployment Guide](./DEPLOYMENT.md) - Deploy to various platforms
+- [Security Policy](./SECURITY.md) - Security best practices
+
+### Project Management
+- [Changelog](./CHANGELOG.md) - Version history
+- [Code of Conduct](./CODE_OF_CONDUCT.md) - Community guidelines
+- [License](./LICENSE) - MIT License
+
+### External Resources
 - [Google AI Documentation](https://ai.google.dev/docs)
 - [ElevenLabs API Docs](https://elevenlabs.io/docs)
 
