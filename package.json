@@ -3,12 +3,24 @@
   "private": true,
   "version": "1.0.0",
   "description": "A powerful multi-modal AI content generation platform using Google Gemini 2.5 Flash",
-  "keywords": ["ai", "content-generation", "gemini", "react", "typescript"],
+  "keywords": [
+    "ai",
+    "content-generation",
+    "gemini",
+    "react",
+    "typescript"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:image": "tsx test-gemini-image.ts",
+    "test:models": "tsx verify-all-models.ts",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist node_modules/.vite",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "react": "^19.2.0",
