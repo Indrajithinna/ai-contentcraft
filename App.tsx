@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Layout } from './components/Layout';
+import { useLocalStorage } from './hooks/useLocalStorage';
 import { Dashboard } from './components/Dashboard';
 import { Generator } from './components/Generator';
 import { History } from './components/History';
@@ -9,24 +10,7 @@ import { TEMPLATES } from './constants';
 export default function App() {
   const [currentView, setCurrentView] = useState<'dashboard' | 'generator' | 'history'>('dashboard');
   const [selectedTemplate, setSelectedTemplate] = useState<Template | null>(null);
-  const [history, setHistory] = useState<HistoryItem[]>([]);
-
-  // Load history from local storage on mount
-  useEffect(() => {
-    const savedHistory = localStorage.getItem('contentcraft_history');
-    if (savedHistory) {
-      try {
-        setHistory(JSON.parse(savedHistory));
-      } catch (e) {
-        console.error("Failed to parse history", e);
-      }
-    }
-  }, []);
-
-  // Save history whenever it changes
-  useEffect(() => {
-    localStorage.setItem('contentcraft_history', JSON.stringify(history));
-  }, [history]);
+  const [history, setHistory] = useLocalStorage<HistoryItem[]>('contentcraft_history', []);
 
   const handleTemplateSelect = (template: Template) => {
     setSelectedTemplate(template);
@@ -57,8 +41,8 @@ export default function App() {
         <Dashboard templates={TEMPLATES} onSelect={handleTemplateSelect} />
       )}
       {currentView === 'generator' && selectedTemplate && (
-        <Generator 
-          template={selectedTemplate} 
+        <Generator
+          template={selectedTemplate}
           onBack={() => setCurrentView('dashboard')}
           onSave={handleSaveToHistory}
         />
