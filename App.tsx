@@ -35,6 +35,12 @@ export default function App() {
     }
   };
 
+  const handleClearHistory = () => {
+    if (window.confirm('Are you sure you want to clear your entire history? This action cannot be undone.')) {
+      setHistory([]);
+    }
+  };
+
   return (
     <Layout currentView={currentView} onNavigate={handleNavigate}>
       {currentView === 'dashboard' && (
@@ -48,7 +54,7 @@ export default function App() {
         />
       )}
       {currentView === 'history' && (
-        <History history={history} />
+        <History history={history} onClearHistory={handleClearHistory} />
       )}
     </Layout>
   );
