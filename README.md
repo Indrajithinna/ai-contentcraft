@@ -15,6 +15,7 @@ A powerful multi-modal AI content generation platform using **Google Gemini 2.5 
 - 🎙️ **Audio Generation** - Text-to-speech with ElevenLabs
 - 🎯 **Multiple Templates** - Pre-built templates for various content types
 - 💾 **Save & Export** - Download and save your generated content
+- 🗑️ **History Management** - Auto-saved history with option to clear all data
 
 ## 🚀 Quick Start
 
@@ -229,6 +230,12 @@ The built files will be in the `dist/` directory.
 - ✅ Improved image quality and generation speed
 - ✅ Added comprehensive error handling
 - ✅ Created test scripts and documentation
+- ✅ Added comprehensive error handling
+
+### v1.1.0 - Usability Improvements
+- ✅ Refactored history storage to use custom hook
+- ✅ Added ability to clear entire history
+- ✅ Improved history persistence stability
 
 ## 📝 License
 
@@ -257,4 +264,4 @@ For issues or questions:
 
 **Built with**: React, TypeScript, Vite, Google Gemini AI, ElevenLabs
 
-**Last Updated**: 2025-11-26
+**Last Updated**: 2026-01-30
